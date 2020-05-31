@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:text="OOPS"
+            android:textAlignment="center"
+            android:textColor="@color/colorThemeDark"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="15dp"
+            android:text="No Internet Connection"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/img_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/font_awesome"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:text="&#xf1eb;"
+            android:textAlignment="center"
+            android:textColor="@color/colorThemeDark"
+            android:textSize="60dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="8dp"
+            android:text="No internet connection, Please try again later."
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_tryagain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorActivityBackground"
+            android:layout_margin="15dp"
+            android:textSize="15dp"
+            android:height="@dimen/default_dash_indicator_width"
+            android:background="@color/colorThemeDark"
+            android:layout_marginTop="30dp"
+            android:text="Try again"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

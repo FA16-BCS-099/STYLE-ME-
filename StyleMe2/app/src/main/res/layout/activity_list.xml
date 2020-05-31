@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.slidingpanelayout.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SlidingPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start"
+        android:layout_height="match_parent"
+        android:background="@color/colorActivityBackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_logo" />
+
+        <include layout="@layout/layout_home_slide_menu" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSliderBg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/layout_header_without_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:layout_above="@+id/add_for_exchange"
+            android:orientation="vertical">
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_community_items"
+                android:layout_gravity="end"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/show_product"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:onClick="openShowProduct"
+                    android:src="@drawable/img_outfit" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/ic_articales"
+                    android:id="@+id/ic_articles"
+                    android:layout_margin="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/ic_shoping_site"
+                    android:id="@+id/ic_shopping_sites"
+                    android:layout_margin="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <include layout="@layout/layout_no_record_available"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/add_for_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="openAddForExcahngeActivity"
+            android:text="@string/add_for_exchange"
+            android:textColor="@color/colorActivityBackground"
+            tools:ignore="OnClick" />
+        <!-- <include
+             android:id="@+id/footer"
+             android:layout_alignParentBottom="true"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             layout="@layout/layout_header_without_back" />-->
+    </RelativeLayout>
+
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>

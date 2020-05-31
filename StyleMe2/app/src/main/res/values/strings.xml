@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">StyleMe</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_dob">DOB</string>
+    <string name="prompt_contactno">Contact no</string>
+    <string name="prompt_retype_password">Retype Password</string>
+    <string name="prompt_old_password">Old Password</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="submit">Submit</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="notification">Notification</string>
+    <string name="ar_looks">AR Looks</string>
+    <string name="calendar">Calendar</string>
+    <string name="community">Community</string>
+
+    <string name="recomendatations">Recommendations</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="wardrobe">Wardrobe</string>
+    <string name="update_password">Update Password</string>
+    <string name="update">Update</string>
+    <string name="logout">Logout</string>
+
+    <string name="add_for_exchange">Add For Exchange</string>
+    <string name="event_detail">Event Detail</string>
+
+
+    <string name="pro_name">Username</string>
+    <string name="pro_texture">Product Name</string>
+    <string name="pro_worth">Worth</string>
+    <string name="pro_status">Status</string>
+    <string name="pro_exchange_for">Exchange For</string>
+    <string name="contact_no">Contact No</string>
+    <string name="available">Available</string>
+    <string name="not_available">Not Available</string>
+    <string name="upload">Upload</string>
+
+    <string name="event_date">Event Date</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_type">Event Type</string>
+    <string name="weather">Weather</string>
+    <string name="event_description">Event Description</string>
+    <string name="out_fit_type">Outfit type</string>
+
+
+    <string name="do_you_have_similar_look_in_your_wardrobe">Do you have similar look in your wardrobe?</string>
+    <string name="yes">Yes</string>
+    <string name="wear_this_dress_for_your_event">Wear this dress for your event.</string>
+    <string name="no">No</string>
+    <string name="add_your_own_look">Add your own look</string>
+    <string name="add_look">Add Look</string>
+    <string name="western">Western</string>
+    <string name="eastern">Eastern</string>
+    <string name="both">Both</string>
+
+    <string name="event_meeting">Meeting</string>
+    <string name="event_everyday">Everyday</string>
+    <string name="event_birthparty_wedding">Birthday/Wedding</string>
+    <string name="non_of_above">Non of above</string>
+
+    <string name="cold">Cold</string>
+    <string name="moderate">Moderate</string>
+    <string name="warm">Warm</string>
+
+    <string name="camera">CAMERA</string>
+    <string name="gallery">GALLERY</string>
+
+    <string name="action_sign_in">@string/action_sign_in_short</string>
+    <string name="action_sign_up">SIGN UP</string>
+    <string name="action_sign_in_short">SIGN IN</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="this_field_should_not_empty">This field should not empty.</string>
+    <string name="please_select">Please select</string>
+    <string name="invalid">Invalid</string>
+    <string name="password_mismatch_message">Password mismatch.</string>
+    <string name="password_regex_message">Password should contain at least one upper case English letter,at least one lower case English letter,at least one digit,at least one special character and minimum eight in length.</string>
+    <string name="OPEN_WEATHER_MAP_API_KEY">e4ba4942754b43114591bf134490e3dc</string>
+</resources>

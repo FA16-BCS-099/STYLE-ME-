@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorThemeLight</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/appfont</item>
+        <item name="android:colorControlActivated">@color/colorThemeDark</item>
+        <item name="android:colorControlNormal">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorThemeDark</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:editTextColor">@color/colorBlack</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <!-- Dialog Theme. -->
+    <style name="DialogTheme" parent="AppTheme">
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/black_transparent</item>
+    </style>
+</resources>

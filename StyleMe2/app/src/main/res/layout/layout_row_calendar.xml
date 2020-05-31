@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="2dp"
+    app:cardBackgroundColor="@color/colorActivityBackground"
+    android:alpha=".8"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/img_product"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <TextView
+
+            android:layout_below="@+id/img_product"
+            android:id="@+id/tv_title1"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:alpha=".9"
+            android:text=""
+            android:textSize="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorActivityBackground"
+            android:background="@color/colorThemeDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/tv_event_name"
+            android:textStyle="bold"
+            android:alpha=".9"
+            android:text=""
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorActivityBackground"
+            android:background="@color/colorThemeDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/tv_title2"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:alpha=".9"
+            android:text=""
+            android:textSize="18dp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/colorActivityBackground"
+            android:background="@color/colorThemeDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

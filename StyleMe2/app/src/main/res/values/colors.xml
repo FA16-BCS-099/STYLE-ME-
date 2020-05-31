@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorThemeLight</color>
+    <color name="colorPrimaryDark">@color/colorThemeDark</color>
+    <color name="colorAccent">@color/colorBlack</color>
+
+    <color name="colorActivityBackground">#F7F7F7</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorThemeDark">#63048D</color>
+    <color name="colorThemeLight">#FF7B21A3</color>
+    <color name="colorThemeBlue">#260038</color>
+    <color name="colorThemetooLight">#F6EDFA</color>
+    <color name="colorSliderBg">#F0F0F0</color>
+    <color name="black_transparent">#923A3A3A</color>
+    <color name="not_available">#940101</color>
+    <color name="available">#019408</color>
+</resources>

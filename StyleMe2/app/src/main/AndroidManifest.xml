@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ba.styleme">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ui.StyleMe"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.activities.home.community.community_detail.UpdateProduct"></activity>
+        <activity android:name=".ui.activities.home.community.community_detail.ShowProduct" /> <!-- Register the Alarm Receiver -->
+        <receiver
+            android:name=".services.broadcast_recevier.AlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths_app" />
+        </provider>
+
+        <activity
+            android:name=".ui.activities.splash.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.user_registration.signin_or_signup.SigninOrSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.user_registration.signin.SigninActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.user_registration.signup.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.user_registration.signin.forgot_password.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.account.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.notification.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.account.update_profile.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.account.update_password.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.account.wardrobe.WardrobeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.community.CommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.community.community_detail.CommunityDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.community.add_for_excahnge.AddForExchangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.calendar.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.calendar.user.EventSubmissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.calendar.user.RecomendationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.calendar.user.add_look.AddLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.calendar.admin.RecomendationAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.home.calendar.admin.RecomendationFormAdminActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

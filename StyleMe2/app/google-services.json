@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "822347548551",
+    "firebase_url": "https://style-me-3bc03.firebaseio.com",
+    "project_id": "style-me-3bc03",
+    "storage_bucket": "style-me-3bc03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822347548551:android:4cd26561aeb8b92c9e7522",
+        "android_client_info": {
+          "package_name": "com.ba.styleme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822347548551-cpta383f79v706kkfb5k15odvkr7teho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7hkCh_eM7a9qFGwf0AnL7WdFl4ys_nkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822347548551-cpta383f79v706kkfb5k15odvkr7teho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

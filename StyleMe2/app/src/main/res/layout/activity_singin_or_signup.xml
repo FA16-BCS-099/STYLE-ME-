@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/colorActivityBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.activities.user_registration.signin.SigninActivity">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/img_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_logo"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:onClick="openSigninActivity"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorActivityBackground"
+        android:text="@string/action_sign_in"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        />
+    <Button
+        android:onClick="openSignupActivity"
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorActivityBackground"
+        android:text="@string/action_sign_up"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
